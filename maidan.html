@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .article-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .article-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .article-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .article-image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .article-content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .like-section {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .like-section img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: transform 0.2s ease;
+        }
+        .like-section img:hover {
+            transform: scale(1.1);
+        }
+        .like-count {
+            font-size: 16px;
+            color: #333;
+        }
+        .comments {
+            margin-top: 30px;
+        }
+        .comments h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .comment-box {
+            margin-top: 10px;
+        }
+        .comment-box textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .comment-box button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #6653d9;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .comment-box button:hover {
+            background-color: var(--vailet);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #6653d9;
+            color: #fff;
+        }
+        .footer__img{
+            margin-left: 50%;
+            padding-top: 5px;
+        }
+    </style>
+    <script>
+        function increaseLike() {
+            const likeCount = document.getElementById("like-count");
+            let currentLikes = parseInt(likeCount.textContent);
+            likeCount.textContent = currentLikes + 1;
+        }
+    </script>
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+            <img src="assets/img/svg/main-logo.svg" alt="Логотип" class="logo__img">
+        </a>
+    </div>
+    
+    </header>
+    </div>
+    <div class="container">
+        <h1 class="article-title">Майдан Незалежності</h1>
+        <div class="article-meta">22 грудня 2021</div>
+        <div class="article-image">
+            <img src="assets/img/jpg/maidan2.jpg" alt="Drone image">    
+        </div>
+        <div class="article-content">
+            <p class="text">Революція Гідності, що відбулася в Україні в 2013 році, стала важливим етапом у новітній історії країни. Ці події не лише змінили політичний ландшафт України, але й вплинули на суспільну свідомість, спонукали до активних дій та стали символом боротьби за європейські цінності та гідність. У цій статті ми розглянемо причини, хід подій та наслідки Революції Гідності, а також важливість пам’яті про Небесну Сотню.
+            </p>
+            <p class="text">Перед початком протестів у 2013 році Україна переживала складний соціально-економічний період. Економічні труднощі, корупція на всіх рівнях влади, а також відсутність реальних реформ викликали невдоволення серед населення. Зокрема, зростання цін на комунальні послуги та зниження рівня життя стали каталізаторами для соціального протесту.
+
+            </p>
+            <p class="text">Крім того, питання європейської інтеграції стало центральним у політичному дискурсі. Після підписання угоди про асоціацію з Європейським Союзом у 2012 році, багато українців сподівалися на реформи, які б наблизили країну до європейських стандартів. Однак раптове рішення тодішнього президента Віктора Януковича призупинити підписання угоди з ЄС у листопаді 2013 року стало останньою краплею, що спонукала людей вийти на вулиці.
+            </p>
+            <p class="text">Протести розпочалися 21 листопада 2013 року, коли група активістів зібралася на Майдані Незалежності в Києві. Спочатку акції були мирними і мали на меті висловити підтримку європейському курсу України. Протестувальники вимагали від уряду відновлення переговорів з ЄС і підписання угоди про асоціацію</p>
+            <p class="text">Однак незабаром акції набрали масового характеру, і до них приєдналися тисячі людей з усіх куточків України. Серед протестувальників були представники різних соціальних груп: студенти, пенсіонери, робітники, підприємці. Всі вони об’єднувалися навколо спільної мети – відстоювати свої права та гідність.</p>
+            <p class="text">З початку грудня 2013 року протести почали ескалувати. Влада відповіла на мирні акції жорсткими заходами: 30 листопада 2013 року спецпідрозділи міліції «Беркут» жорстоко розігнали протестувальників на Майдані. Це викликало хвилю обурення та ще більшу мобілізацію людей.
+            </p>
+            <p class="text">Протестувальники почали організовуватися, створюючи штаби та координаційні ради. На Майдані Незалежності з’явилися барикади, а сам Майдан перетворився на центр боротьби за права людини та демократію. В Україні почалися масові акції солідарності, які охопили не лише Київ, але й інші міста.
+            </p>
+            <p class="text">Протягом грудня 2013 року та січня 2014 року протести продовжували набирати обертів. Люди виходили на вулиці не лише в Києві, але й у Львові, Одесі, Харкові та інших містах. Вимоги протестувальників змінювалися: від підтримки європейського курсу до вимог відставки Януковича та проведення дострокових виборів.
+            </p>
+            <p class="text">У цей період протестувальники демонстрували неабияку солідарність. На Майдані організовувалися концерти, культурні заходи, а також медична допомога для постраждалих. Люди приносили їжу, одяг та теплі речі для тих, хто залишався на Майдані.
+
+            </p>
+            <p class="text">Найбільш трагічні події відбулися в лютому 2014 року. З 18 по 20 лютого ситуація на Майдані загострилася до критичної межі. Влада розпочала масовану атаку на протестувальників, використовуючи вогнепальну зброю. У ці дні загинуло понад ста людей, які стали відомими як Небесна Сотня.
+            </p>
+            <p class="text">Ця трагедія викликала міжнародний резонанс і засудження дій української влади з боку світової спільноти. Багато країн висловили підтримку протестувальникам та закликали до припинення насильства.
+            </p>
+            <p class="text">Революція Гідності стала важливим етапом у становленні української нації. Події на Майдані Незалежності показали, що українці готові боротися за свої права та гідність. Пам'ять про Небесну Сотню стала символом цієї боротьби і нагадуванням про те, що ціна свободи може бути дуже високою.</p>
+        </div>
+        <div class="like-section">
+            <img src="assets/img/svg/icon-heart-dark-added.svg" alt="Like icon" onclick="increaseLike()">
+            <div class="like-count">Лайків: <span id="like-count">219</span></div>
+          </div>
+          <div class="comments">
+              <h3>Коментарі</h3>
+              <div class="comment-box">
+                  <textarea placeholder="Ваш коментар"></textarea>
+                  <button>Надіслати</button>
+              </div>
+          </div>
+      </div>
+      <footer>© FlashNews!
+        <img src="assets/img/svg/white-logo.svg" alt="" class="footer__img">
+      </footer>
+  </body>
+  </html>

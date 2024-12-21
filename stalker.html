@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .article-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .article-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .article-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .article-image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .article-content {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .like-section {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .like-section img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: transform 0.2s ease;
+        }
+        .like-section img:hover {
+            transform: scale(1.1);
+        }
+        .like-count {
+            font-size: 16px;
+            color: #333;
+        }
+        .comments {
+            margin-top: 30px;
+        }
+        .comments h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .comment-box {
+            margin-top: 10px;
+        }
+        .comment-box textarea {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .comment-box button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #6653d9;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .comment-box button:hover {
+            background-color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #6653d9;
+            color: #fff;
+        }
+        .footer__img{
+            margin-left: 50%;
+            padding-top: 5px;
+        }
+    </style>
+    <script>
+        function increaseLike() {
+            const likeCount = document.getElementById("like-count");
+            let currentLikes = parseInt(likeCount.textContent);
+            likeCount.textContent = currentLikes + 1;
+        }
+    </script>
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+            <img src="assets/img/svg/main-logo.svg" alt="Логотип" class="logo__img">
+        </a>
+    </div>
+    
+    </header>
+    </div>
+    <div class="container">
+        <h1 class="article-title">S.T.A.L.K.E.R. 2</h1>
+        <div class="article-meta">22 грудня 2021</div>
+        <div class="article-image">
+            <img src="assets/img/jpg/stalker.jpg" alt="Drone image">    
+        </div>
+        <div class="article-content">
+            <p class="text">S.T.A.L.K.E.R. 2: Heart of Chornobyl — це продовження культової серії ігор, що занурює гравців у постапокаліптичний світ Зони відчуження Чорнобиля. Гра обіцяє не лише захоплюючий сюжет, а й нові механіки геймплею, які підвищують рівень інтерактивності та занурення. Розробники з GSC Game World прагнуть зберегти атмосферу оригінальних ігор, водночас впроваджуючи сучасні технології та графіку.
+            </p>
+            <p class="text">Основна історія S.T.A.L.K.E.R. 2 розгортається навколо персонажа на ім'я Скиф, який потрапляє в Зону після того, як аномалія знищила його дім і залишила за собою загадковий артефакт. Скиф вирушає на пошуки артефакту та спеціального пристрою — Сканера, який був викрадений милітаризованою групою. У процесі своїх пригод він стикається з різними фракціями, мутантами та аномаліями, що населяють Зону.
+            </p>
+            <p class="text">Гравець має можливість приймати рішення, які впливають на розвиток сюжету та його фінал. Наприклад, можна вибрати між підтримкою науковців або ж спробувати зупинити їх експерименти. Ці вибори ведуть до різних наслідків, включаючи активізацію нових загроз і конфліктів у Зоні.
+            </p>
+            <p class="text">Сюжет також містить елементи виживання, де гравці повинні управляти ресурсами, такими як їжа та медикаменти, щоб вижити в умовах постійної небезпеки. </p>
+            <p class="text">Гра вимагає встановлення на SSD для оптимальної продуктивності та швидкості завантаження. 
+            </p>
+            <p class="text">S.T.A.L.K.E.R. 2 обіцяє стати не лише продовженням легендарної серії, а й новим словом у жанрі постапокаліптичних ігор, пропонуючи гравцям унікальний досвід у небезпечному світі Зони.
+            </p>
+            <p class="text">Порівняно з попередніми частинами серії, S.T.A.L.K.E.R. 2 пропонує значні покращення в графіці та механіках. У той час як перші ігри, такі як S.T.A.L.K.E.R.: Shadow of Chernobyl (2007), мали обмежені можливості в плані відкритого світу та взаємодії з навколишнім середовищем, нова гра розширює ці аспекти, забезпечуючи більш детальну графіку та глибокий рівень інтерактивності. Також у порівнянні з оригінальною трилогією S.T.A.L.K.E.R., нова гра пропонує більш складну структуру сюжету та різноманітність місій. Якщо в перших частинах основна мета полягала в дослідженні Зони та виконанні завдань без значного впливу на сюжет, то S.T.A.L.K.E.R. 2 акцентує увагу на моральних виборах гравця і їхніх наслідках. Це дозволяє створити більш динамічний і непередбачуваний розвиток подій.
+            </p>
+        </div>
+        <div class="like-section">
+            <img src="assets/img/svg/icon-heart-dark-added.svg" alt="Like icon" onclick="increaseLike()">
+            <div class="like-count">Лайків: <span id="like-count">733</span></div>
+          </div>
+          <div class="comments">
+              <h3>Коментарі</h3>
+              <div class="comment-box">
+                  <textarea placeholder="Ваш коментар"></textarea>
+                  <button>Надіслати</button>
+              </div>
+          </div>
+      </div>
+      <footer>© FlashNews!
+        <img src="assets/img/svg/white-logo.svg" alt="" class="footer__img">
+      </footer>
+  </body>
+  </html>
